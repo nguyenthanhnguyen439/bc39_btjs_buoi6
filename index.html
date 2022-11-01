@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!-- TÌM SỐ NGUYÊN DƯƠNG NHỎ NHẤT MÀ TỔNG CÁC SỐ TRONG SỐ ĐÓ PHẢI LỚN HƠN 10000 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    TÌM SỐ NGUYÊN DƯƠNG NHỎ NHẤT MÀ TỔNG CÁC SỐ TRONG SỐ ĐÓ PHẢI LỚN HƠN 10000
+                    <div class="card-body">
+                        <div class="card-group">
+                            <div class="form-group">
+                                <div id="InfoSoNguyen"></div>
+                                <button id="timSoNguyenMin" class="btn btn-success" onclick="timSoNguyenMaxMin()"> Tím
+                                    số
+                                    nguyên nhỏ
+                                    nhất</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- NHẬP HAI SỐ x,n TÍNH | TỔNG S(n) = x + x^2 + x^3 + x^4 + ... + x^n -->
+                <div class="card">
+                    NHẬP HAI SỐ x,n TÍNH | TỔNG S(n) = x + x^2 + x^3 + x^4 + ... + x^n
+                    <div class="card-body">
+                        <div class="card-group">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="my-input">Nhập X:</label>
+                                    <input id="nhapX" class="form-control" type="text" name="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="my-input">Nhập N:</label>
+                                    <input id="nhapN" class="form-control" type="text" name="">
+                                </div>
+
+                                <div id="InfoTongN"></div>
+                                <button id="tongN" class="btn btn-success" onclick="tinhTongN()"> Tính tổng N</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="card">
+                    NHẬP N TÍNH GIAI THỪA 1*2*...n
+                    <div class="card-body">
+                        <div class="card-group">
+
+                            <div class="form-group">
+                                <label for="my-input">Nhập N:</label>
+                                <input id="nhap_GiaiThua" class="form-control" type="text" name="">
+
+
+                                <div id="Info_GiaiThuaN" class="mt-3"></div>
+                                <button id="tinhGiaiThua" class="btn btn-success mt-3" onclick="tinhGiaiThua()"> Tính tổng
+                                    N</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- <div class="card">
+                XUẤT DIV
+             <div class="card-body">
+                <div class="card-group">
+
+                        <div class="form-group">
+                            <label for="my-input">Nhập số div cần tạo:</label>
+                            <input id="nhap_SoDiv" class="form-control" type="text" name="">
+                        </div> -->
+                <div class="form-group">
+                    <div id="Info_Div"></div>
+                    <button id="xuatDiv" class="btn btn-success mt-4" onclick="inTagDiv()"> Xuất Thẻ div</button>
+                </div>
+                <!-- </div>
+                </div>
+                </div>
+
+             </div> -->
+
+
+                <div class="card">
+                    XUẤT CÁC SỐ NGUYÊN TỐ
+                    <div class="card-body">
+                        <div class="card-group">
+
+                            <div class="form-group">
+                                <label for="my-input">Nhập số nguyên tố:</label>
+                                <input id="nhap_SoNguyenTo" class="form-control" type="text" name="">
+
+
+                                <div id="infoSo_Nguyento" class="mt-3"></div>
+                                <button id="xuatSo_NguyenTo" class="btn btn-success mt-3" onclick="soNguyento()"> Xuất số
+                                    nguyên
+                                    tố</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
